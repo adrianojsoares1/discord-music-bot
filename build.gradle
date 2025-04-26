@@ -27,7 +27,7 @@ dependencies {
     implementation group: 'commons-io', name: 'commons-io', version: '2.18.0'
 
     /* Application Specific Libraries */
-    implementation group: 'com.discord4j', name: 'discord4j-core', version: '3.2.7'
+    implementation group: 'com.discord4j', name: 'discord4j-core', version: '3.2.8'
     implementation group: 'dev.arbjerg', name: 'lavaplayer', version: '2.2.3'
 
     implementation("dev.lavalink.youtube:v2:1.11.5")
