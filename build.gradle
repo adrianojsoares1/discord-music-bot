@@ -30,7 +30,7 @@ dependencies {
     implementation group: 'com.discord4j', name: 'discord4j-core', version: '3.2.7'
     implementation group: 'dev.arbjerg', name: 'lavaplayer', version: '2.2.3'
 
-    implementation("dev.lavalink.youtube:v2:1.11.5")
+    implementation("dev.lavalink.youtube:v2:1.13.2")
 
     /* Mac Users with the M1 chip may experience networking issues with LavaPlayer.
      * This plugin will install proper DNS resolution tools.
