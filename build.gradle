@@ -24,7 +24,7 @@ dependencies {
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
     /* Java Common Libraries */
-    implementation group: 'commons-io', name: 'commons-io', version: '2.18.0'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.19.0'
 
     /* Application Specific Libraries */
     implementation group: 'com.discord4j', name: 'discord4j-core', version: '3.2.8'
