@@ -113,11 +113,15 @@ public class VoiceChannelService {
     /**
      * Commands the bot to leave a channel, and discard the voice connection.
      */
-    public void leaveVoiceChannel() {
+    public boolean leaveVoiceChannel() {
         VoiceConnection voiceConnection = this.discordClient
                 .getVoiceConnectionRegistry()
                 .getVoiceConnection(Snowflake.of(pbp.getGuildId()))
                 .block();
-        voiceConnection.disconnect().block();
+        if (voiceConnection != null) {
+            voiceConnection.disconnect().block();
+            return true;
+        }
+        return false;
     }
 }
