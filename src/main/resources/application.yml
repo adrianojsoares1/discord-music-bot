@@ -10,3 +10,7 @@ discord:
     secret:
       discord-token: ${DISCORD_BOT_TOKEN}
       oauth-2-token: ${OAUTH_2_TOKEN}
+logging:
+  level:
+    discord4j.voice.PacketTransformer: OFF  # "Failed to decrypt audio" Might want these logs back in the future.
+    discord4j.voice.LocalVoiceReceiveTask: OFF  # Unsupported packet type: -55
