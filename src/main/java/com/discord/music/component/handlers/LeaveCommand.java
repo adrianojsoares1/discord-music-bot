@@ -16,7 +16,9 @@ public class LeaveCommand implements CommandHandler<ChatInputInteractionEvent> {
 
     @Override
     public Mono<Void> executeOnCommand(ChatInputInteractionEvent event) {
-        this.voiceChannelService.leaveVoiceChannel();
-        return event.reply("Bot will leave voice channel.").withEphemeral(true);
+        if (this.voiceChannelService.leaveVoiceChannel()) {
+            return event.reply("Bot will leave voice channel.").withEphemeral(true);
+        }
+        return event.reply("Bot is not in voice channel.").withEphemeral(true);
     }
 }
