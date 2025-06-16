@@ -23,7 +23,8 @@ public class AudioPlayerConfig {
         AudioSourceManagers.registerRemoteSources(playerManager,
                 com.sedmelluq.discord.lavaplayer.source.youtube.YoutubeAudioSourceManager.class);
         YoutubeAudioSourceManager ytSourceManager = new YoutubeAudioSourceManager();
-        ytSourceManager.useOauth2(oAuthToken, false);
+        boolean skipInitialization = oAuthToken != null;
+        ytSourceManager.useOauth2(oAuthToken, skipInitialization);
         playerManager.registerSourceManager(ytSourceManager);
         return playerManager;
     }
