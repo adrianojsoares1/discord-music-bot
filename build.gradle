@@ -7,7 +7,7 @@ plugins {
 }
 
 group = 'com.discord'
-version = 'v1.5.8-SNAPSHOT'
+version = 'v1.5.9-SNAPSHOT'
 sourceCompatibility = '17'
 targetCompatibility = '17'
 
