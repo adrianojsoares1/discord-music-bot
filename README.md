@@ -1,5 +1,5 @@
 # Discord Music Bot
-Streams any YouTube video to your private Discord server. A simple bot using LavaPlayer and Discord4j.
+Streams any YouTube video to your private Discord server. A simple bot using LavaPlayer and Discord4J.
 
 ## Steps To Run Local
 
@@ -22,16 +22,9 @@ Streams any YouTube video to your private Discord server. A simple bot using Lav
           public-key: <your application public key>
         secret:
           discord-token: <your SUPER secret discord token here>
+          oauth-2-token: <your SUPER secret YouTube OAuth token here>
     ```
 3. Run Spring with the `local` profile to load your specific properties (`--spring.profiles.active=local`)
 
 ### That's it! :) 
 When you launch the application, it will automatically install all commands on your server. 
-
-
-## Steps to Run on AWS Free Tier
-
-### Generate SSH Keys for EC2 Connection
-
-1. Use the `ssh-keygen -t rsa -b 2048` command to generate a set of keys. The terraform repository demands this.
-   2. Save key to `/Users/<you>/.ssh/id_rsa_dmb`
